@@ -175,6 +175,6 @@ main {
 
 .card-info {
   display: flex;
-  flex-direction: column; /* This gives me the bar back which I assume is what is pushing it out (if I remove it)*/
+  flex-direction: column;
   justify-content: space-between;
 }
