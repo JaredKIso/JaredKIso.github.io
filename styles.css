@@ -92,6 +92,7 @@ main {
   margin: 1.5rem 0rem;
   padding: 1rem 5rem;
   align-items: center;
+  text-decoration: none;
 }
 
 .link h2 {
@@ -153,6 +154,8 @@ main {
   padding: 2rem;
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
   justify-content: space-between;
+  align-items: center;
+  gap: 25px;
 }
 
 .progress {
@@ -164,17 +167,29 @@ main {
   overflow: hidden;
 }
 
+.progress.gap {
+  margin-top: 0.5rem;
+}
+
 .progress::after {
   content: "";
   width: 100%;
   height: 100%;
   background: rgb(236, 236, 236);
   position: absolute;
-  left: 5%;
+  left: 0.5%;
 }
 
 .card-info {
   display: flex;
-  flex-direction: column; /* This gives me the bar back which I assume is what is pushing it out (if I remove it)*/
+  flex-direction: column;
   justify-content: space-between;
+  gap: 0rem;
+  flex: 1;
+}
+
+.imginf {
+  width: 50px;
+  height: 50px;
+  align-items: center;
 }
